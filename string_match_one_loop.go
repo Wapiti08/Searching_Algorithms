@@ -19,18 +19,16 @@ import "fmt"
 func subsequence_match(string1 string, string2 string) {
     // try to find whether string1 is the subsequences of string2
     var index int
-    acc := 1
     for i:=0; i<len(string2); i++ {
         if string1[index] == string2[i] && index < len(string1)-1           {
             index++
-            acc++
         }else{
             continue
         }
        
     }
 
-    if acc==len(string1){
+    if (index+1)==len(string1){
         fmt.Println("Love you too")
 
     }else {
