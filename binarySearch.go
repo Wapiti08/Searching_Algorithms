@@ -23,7 +23,7 @@ SAMPLE OUTPUT
 */
 
 package main
-import "fmt"
+import ("fmt";"sort")
 
 func binarySearch(Array []int, low int, high int, key int) int{
 	// low and high are the indexes
@@ -56,6 +56,7 @@ func main() {
 	for i:=1; i<length+1; i++{
 		fmt.Scanf("%d", &Array[i])
 	}
+	sort.Ints(Array)
 
 	// input the query num
 	var num, key int
